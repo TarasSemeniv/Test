@@ -16,5 +16,6 @@ app.UseHttpsRedirection();
 
 
 app.MapGet("/api/say", () => Results.Ok("Say Hello"));
+app.MapGet("/api/dontsay", () => Results.Ok("Don't say hello"));
 
 app.Run();
